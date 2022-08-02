@@ -205,6 +205,48 @@ Als Konvention werden diese in unserem Team \code{feature/<feature-name>} genann
 In Github-Flow werden Pull-Requests vorgesehen, wenn ein Feature bereit zur Review ist.
 Weil wir diese in unserem Projekt nicht zur Verfügung hatten, wurden dafür die Features in unserem Organisationswerkzeug speziell gekennzeichnet.
 
+\subsection{Marketing}
+
+\paragraph{Teamname}
+Logischerweise musste ein Teamname her.
+Dies gestaltete sich zunächst als schwierig.
+Der Teamname sollte kurz, prägnant und einprägsam sein.
+Zusätzlich sollte der Name nicht bereits existieren.
+Nach längeren Überlegen, Probieren und Abstimmen fiel die Wahl auf "myUniHelps".
+
+\paragraph{Slogan}
+Wichtig war es, inhaltlicht mit dem Slogan die Zielgruppen anzusprechen. 
+Besagte Zielgruppen sind Hochschulen / Universitäten, Studenten, Dozenten und Personalabteilungen.
+Außerdem sollte er einprägsam sein und gut ins Ohr gehen.
+Nach längeren Überlegen, Probieren und Abstimmen fiel die Wahl auf "Hiwi-Anträge leicht gemacht! Einfach hochladen.".
+
+\paragraph{Marketingkonzept}
+Anfangs musste recherchiert werden, was unter einem Marketingkonzept zu verstehen ist und was inhaltlich dazugehört.
+Der erste Punkt im Markteingkonzept war die SWOT-Analyse (SWOT $\rightarrow$ Strength, Weakness, Oppurtunities, Threats).
+Dabei wurden die Stärken, Schwächen, Chancen und Risiken analysiert und gegenüber gestellt. Durch Betrachtung dieser 4 Aspekte gingen dann die Marketingziele heraus.
+Mithilfe der Marketingstrategien und Marketinginstrumenten sollen diese Ziele dann verwirklicht werden.
+
+\paragraph{Marketingziele}
+Hier ist eine Auflistung der bereits erwähnten Marketingziele:
+\begin{itemize}
+    \item Produktnachfrage erhöhen
+    \item Präsenz in den wesentlichen Online Kanälen des Kunden
+    \item Erhöhung der Servicequalität
+    \item Erhöhung der Kundenzufriedenheit
+    \item Prozessoptimierung
+    \item Umstieg der allgemeinen Unterschrift zur Qualifizierten Elektronischen Signatur (QES)
+\end{itemize}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/SWOT-table.png}
+	\caption{SWOT-Analyse}
+	\label{fig:use-case}
+\end{figure}
+
+
 \subsection{Code-Reviews}
 Neben den Softwaretests und der Qualitätssicherung, wurde während der Entwicklung auch auf die Güte des geschriebenen Quellcodes geachtet.
 Diese wurden in der Review-Phase jedes Features vom Entwicklungsleiter vollzogen.
@@ -242,7 +284,7 @@ Zusätzlich zu diesen beiden Punkten unterstützt ClickUp Gantt-Charts zur Zeitp
 Diese drei Punkte haben keine andere Softwarelösungen kostenfrei angeboten und wir haben uns daher für ClickUp entschieden.
 
 Tasks konnten ebenfalls Beschreibungen hinzugefügt werden, welche wir für User Stories verwendet haben, um die Features weiter zu definieren.
-Ein weiteres nützliches Feature sind Tags und Labels, welche Aufgaben hinzugefügt wurden um spezielle Dinge einfach zu visualisieren, wie zum Beispiel die verantwortlichen Teamabteilungen oder eine nötige Datenbankänderung.
+Ein weiters nützliches Feature sind Tags und Labels, welche Aufgaben hinzugefügt wurden um spezielle Dinge einfach zu visualisieren, wie zum Beispiel die verantwortlichen Teamabteilungen oder eine nötige Datenbankänderung.
 
 DropIn
 
@@ -250,10 +292,6 @@ DropIn
 \subsubsection{Meetingreports und Protokolle}
 \label{reports}
 %Report Dokument und Protokoll Dokument
-Wir haben für die Features Softwaretests durchgeführt, welche in einem Testprotokoll \ref{pdf:testprotokoll} und einer dazugehörigen Testspezifikation \ref{pdf:testspezifikation} dokumentiert wurden.
-Somit lässt sich feststellen, wer was getestet hat.
-Die Tests wurden durch unsere Qualitätssicherung auf Fehler und ihre Qualität geprüft.
-
 \subsection{Lösung entstandener Probleme}
 
 \section{Planung der Softwareentwicklung}
@@ -383,17 +421,21 @@ Die Daten, welche aus der eID ausgelesen werden, wurden hier aus den Formularen 
 und verringert somit auch die Anzahl von eventuellen Fehlern in den Formularen.
 
 \subsection{Projektwebseite}
+Mit der Marketingwebseite wird das Produkt "myUniHelps" beworben und es soll für den Kunden transparenter gemacht werden.
+Zur Entstehung der Marketingwebseite war zunächste wieder Recherche notwendig, um dann über eine geeignete Vorgehensweise nachzudenken.
+Nach den Recherchen und das besprechen der Vorgehensweise, ging es an das Entwickeln der Marketingwebseite.
+Parallel zur Entwicklung wurden die Inhalte für die Marketingwebseite entworfen.
+Die Inhalte sind Slogan, ein kleiner Bereich mit Informationen, Vorteile, eID, QES, Nutzerbewertungen und die Teamvorstellung.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/marketing.PNG}
+	\caption{Marketingwebseite}
+	\label{fig:use-case}
+\end{figure}
 
 \subsection{Qualitätssicherung}
 \label{qualitiyassurance}
-\subsubsection{Softwaretests}
-Um sicherzustellen, dass die einzelnen Features einwandfrei funktionieren, haben wir Softwaretests geschrieben.
-Diese testen, ob die Funktionalität der Features gewährleistet wird.
-Die durchgeführten Tests wurden in einer Testspezifikation \ref{pdf:testspezifikation} und einem Testprotokoll \ref{pdf:testprotokoll} dokumentiert.
-Sofern ein Test negativ ausfällt musste das entsprechende Feature überarbeitet werden, 
-bis der Test ohne Fehler abgeschlossen wird.
-Weiterhin ist in den Protokollen vermerkt, wer die Tests geschrieben hat und von wem diese kontrolliert wurden.
-Daher haben wir eine Qualitätskontrolle der Tests durchgeführt.
 
 \subsection{Einrichten der Infrastruktur/Artefakte}
 
@@ -472,9 +514,9 @@ chmod -R 777 /var/www/html/storage
 
 \section{Anhang}
 
-\includepdf[pages=1-2,scale=0.8,pagecommand={\subsection{Featureliste}\label{featureliste}}]{img/Feature_Liste_v1.0.pdf}
-\includepdf[pages=1,scale=.9,pagecommand={\subsection{Testprotokoll}\label{pdf:testprotokoll}},linktodoc=true]{files/Testprotokoll.pdf}
-\includepdf[pages=1-2,scale=.9,pagecommand={\subsection{Testspezifikation}\label{pdf:testspezifikation}},linktodoc=true]{files/Testspezifikation.pdf}
+\subsection{Featureliste}
+\label{featureliste}
+\includepdf[pages=1-2]{img/Feature_Liste_v1.0.pdf}
 
 %\begin{figure}
 %	\centering
